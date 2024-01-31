@@ -1,87 +1,68 @@
-
 <p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Post-Install Configuration</h1>
-This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
-
-
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
-
-<h2>Operating Systems Used </h2>
-
-- Windows 10</b> (21H2)
-
-
-<h2>Configuration Steps</h2>
+<h1>osTicket - Post Configuration Setup</h1>
+</p>
+This tutorial demonstrates the post configuration setup of the osTicket system .<br />
 
 <p>
-Now that osTicket has been successfully configured from the ground up, the next steps will consist of system administration and post installation setup.
-First, configure new roles within the help desk. To do so, go to Admin panel -  Agents - Roles. Click on "Add new role" then enter the name of the new role. You can also modify any specific roles permissions. In this case since we are creating a Supreme Admin they will be given all permissions. Be aware that roles are used to determine an agents permissions. That being said, not all agents will have unlimited access. During the setup process your screen should resemble something like this. 
-</p>
-<a href="![image](https://github.com/Bryanmontas718/post-install-config/assets/157803821/4bb7a10c-54ac-4136-af87-4923e6e34d09)
 
 </p>
+</p>
 <p>
-<a href="https://imgur.com/iAFWxKZ"><img src="https://i.imgur.com/iAFWxKZ.jpg" title="source: imgur.com" /></a>
+Okay wonderful! We have successfully configured osTicket from scratch. Now we will do some system administration and work on some post installation setup.
+first we will configure new roles within the help desk. In order to do so go to Admin panel-> Agents-> Roles. We will create a Supreme Admin. 
+Click on "Add new role" then enter the name of the new role. You can also modify any specific roles permissions. In this case since we are creating a Supreme Admin they will be given all permissions. Keep in mind roles are used to determine an agents permissions so not all agents will have unlimited access. If you followed the steps correctly your screen should like something like this. As you can see we have successfully created the "Supreme Admin" role.
+</p>
+<img src="https://i.imgur.com/JnNJEo8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <p>
 </p>
 <p>
-Select the "Departments" in the agents tab. You will be able to create a new department from here. Each Agent is assigned to a specific department depending on their assigned role within the helpdesk. For this example, you will be create the "System Administrators" department, this is where the Supreme Admins will be designated. Other specific settings such as SLAs, managers and other email settings can be established in the departments tab. 
+Select the "Departments" button in the agents tab. Here we will be able to create a new department. Each Agent is assigned to a specific department depending on their assigned role within the helpdesk. In this case we will be creating the "System Administrators" department, this is where the Supreme Admins will be designated. Other specific settings such as SLAs, managers and other email settings can be set up in the departments tab. 
 </p>
 <br />
 <p>
 <img src="https://i.imgur.com/dGK0RVM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Each time a new department is configfured, a new team is required to be established. Teams allow you to pull agents from various departments. For example, you may have an A team that has specialists from a number of specific departments. For example you can create a help topic that correlates with a product you produce, and assign it to a team of agents that specialize in that particular product. To create a team, go to Agents - Teams. A Level I support team has been created by default. In this example, a Level II Support Team will be created. 
+After configuring a new department we will set up a new team. Teams allow you to pull agents from different departments you can have an A team that has top technicians from specific departments. For example you can create a help topic that correlates with a product you produce, and assign it to a team of agents that specialize in that particular product. To set up a team go to Agents->Teams. A Level I support team has been created by default, in this example we will create a Level II Support Team. 
 </p>
 <br />
 <p>
-<a href="https://imgur.com/rZ92VL7"><img src="https://i.imgur.com/rZ92VL7.jpg" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/E89ex6r.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After the creation of a new team, you will configure settings that will enable anyone to create tickets. Admin Panel-Settings-User Settings.
+Now that we have set up a new team we will create a new setting that will allow anyone to create tickets. Admin Panel->Settings->User Settings.
 
 </p>
 <br />
-<a href="https://imgur.com/Bf6mmTB"><img src="https://i.imgur.com/Bf6mmTB.jpg" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/62DQC0s.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After the configuration of ticket settings, next you will be required to create Agents. Agents are the employees of the helpdesk that actually work on solving tickets. Agents are assigned primary departments and given a primary role for tickets sent to their department. Agents can be given access to other departments other than their own, they can also have different roles depending on which department they are in. Permissions, Access, & Teams are be assigned in the Agents tab. 
+It is now time to create Agents. Agents are the employees of the helpdesk that actually work on solving tickets. Agents are assigned primary departments and given a primary role for tickets sent to their department. Agents can be given access to other departments other than their own, they can also have different roles depending on which department they are in. Permissions, Access, & Teams are be assigned in the Agents tab. 
 </p>
 <br />
-<a href="https://imgur.com/Qls8w8E"><img src="https://i.imgur.com/Qls8w8E.jpg" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/8uuZzWt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After creating the required agents, you will then create users. Users are customers that create tickets when they are have issues of varying degrees. A user is identified with their E-mail address. To create a user follow this path Agent Panel->Users->User Directory->Add new. 
+After creating some agents we will create users. Users are customers that create tickets when they are having issues. A user is identified with their E-mail address. To create a user follow this path Agent Panel->Users->User Directory->Add new. 
 </p>
 <br />
-<a href="https://imgur.com/svEtDhF"><img src="https://i.imgur.com/svEtDhF.jpg" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/8uuZzWt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-SLAs provide a length of time in which the help desk is expected to take in order to solve a specific ticket. SLAs are created by going to Admin Panel-Manage SLA Plans. Each SLA has a schedule and within that schedule there is a grace period. In this example SEV-A has a 24/7 and a one hour grace period. 
+SLAs Plans provide a length of time in which the help desk is expected to take in order to solve a specific ticket. SLA Plans are created by going to Admin Panel->Manage->SLA Plans. Each SLA has a schedule and within that schedule there is a grace period. In this example SEV-A has a 24/7 and a one hour grace period. 
 </p>
 <br />
-<a href="https://imgur.com/8wwfjvm"><img src="https://i.imgur.com/8wwfjvm.jpg" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/1ozkHx1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<a href="https://imgur.com/ujc1fLa"><img src="https://i.imgur.com/ujc1fLa.jpg" title="source: imgur.com" /></a>
-</p>
-<p>
-Help topics help users categorize their tickets. In the example below we have made a help topic for "Business Critical Outage". This particualr topic could be in reference to customers inability to access mobile banking or any number of other user related issues.
+Help topics help users categorize their tickets. In the example below we have made a help topic for "Business Critical Outage" this can be if customers cannot access mobile banking. 
 </p>
 <br />
-<a href="https://imgur.com/OKfBexf"><img src="https://i.imgur.com/OKfBexf.jpg" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/oRjbM4k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<p>
-<a href="https://imgur.com/5odAgWo"><img src="https://i.imgur.com/5odAgWo.jpg" title="source: imgur.com" /></a>
-</p>
